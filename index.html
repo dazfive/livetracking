@@ -12,13 +12,13 @@
     --navy:#0c2641;--navy-deep:#092036;--ink:#0c2641;--body:#4b5a6e;--body-light:#7c8ba0;
     --bg:#edf2f7;--bg-soft:#f4f7fa;--white:#fff;--accent:#1790d5;--accent-deep:#127bb8;
     --tint:#e3f2fa;--line:#dbe2ea;--line-navy:#1c3a58;--on-navy:#cdd9e6;--on-navy-soft:#8aa2ba;
-    --maxw:1240px;--radius:18px;
-    --gutter:max(40px,calc((100vw - 1240px)/2 + 40px));
+    --maxw:1440px;--radius:18px;
+    --gutter:max(48px,calc((100vw - 1440px)/2 + 48px));
   }
   *{box-sizing:border-box;margin:0;padding:0}
   html{scroll-behavior:smooth}
   body{font-family:'IBM Plex Sans',system-ui,sans-serif;background:var(--bg);color:var(--ink);line-height:1.55;-webkit-font-smoothing:antialiased;text-rendering:optimizeLegibility}
-  .wrap{max-width:var(--maxw);margin:0 auto;padding:0 40px}
+  .wrap{max-width:var(--maxw);margin:0 auto;padding:0 48px}
   a{color:inherit;text-decoration:none}
   h1,h2,h3{font-weight:700;letter-spacing:-0.02em;line-height:1.08}
   .mono{font-family:'IBM Plex Mono',monospace}
@@ -324,10 +324,10 @@
   @media(max-width:520px){.loop2 .nodes{grid-template-columns:1fr}}
 
   /* RPT — staggered offset panels (timeline feel) */
-  .rpt2{display:grid;grid-template-columns:1fr 1fr;gap:28px;align-items:start}
+  .rpt2{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:28px;align-items:stretch}
   .rpt2 .panel{border-radius:var(--radius);padding:40px;min-height:320px;display:flex;flex-direction:column}
   .rpt2 .panel.light{background:var(--white);border:1px solid var(--line);box-shadow:0 20px 50px -34px rgba(12,38,65,.3)}
-  .rpt2 .panel.dark{background:var(--navy);color:var(--on-navy);margin-top:66px;box-shadow:0 26px 60px -34px rgba(12,38,65,.55)}
+  .rpt2 .panel.dark{background:var(--navy);color:var(--on-navy);box-shadow:0 26px 60px -34px rgba(12,38,65,.55)}
   .rpt2 .panel .tag-lab{font-family:'IBM Plex Mono',monospace;font-size:12px;letter-spacing:.12em;text-transform:uppercase;color:var(--body-light);margin-bottom:20px}
   .rpt2 .panel.dark .tag-lab{color:#63b7e6}
   .rpt2 .panel.light .tag-lab{color:var(--accent-deep)}
