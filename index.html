@@ -23,19 +23,16 @@
   h1,h2,h3{font-weight:700;letter-spacing:-0.02em;line-height:1.08}
   .mono{font-family:'IBM Plex Mono',monospace}
 
-  /* reveal-on-scroll */
   .reveal{opacity:0;transform:translateY(24px);transition:opacity .6s cubic-bezier(.2,.7,.3,1),transform .6s cubic-bezier(.2,.7,.3,1)}
   .reveal.in{opacity:1;transform:none}
   .d1{transition-delay:.07s}.d2{transition-delay:.14s}.d3{transition-delay:.21s}
   @media(prefers-reduced-motion:reduce){.reveal{opacity:1;transform:none;transition:none}}
 
-  /* eyebrow */
   .eyebrow{display:flex;align-items:center;gap:16px;margin-bottom:22px}
   .eyebrow .r{width:30px;height:2px;background:var(--accent);flex-shrink:0}
   .eyebrow span{font-family:'IBM Plex Mono',monospace;font-size:12.5px;font-weight:500;letter-spacing:.2em;text-transform:uppercase;color:var(--body-light)}
   .eyebrow.on-navy span{color:var(--on-navy-soft)}
 
-  /* buttons */
   .btn{display:inline-flex;align-items:center;gap:9px;font-weight:600;font-size:15px;padding:14px 24px;border-radius:8px;cursor:pointer;border:1px solid transparent;transition:transform .12s ease,background .12s ease,border-color .12s ease}
   .btn:hover{transform:translateY(-1px)}
   .btn-primary{background:var(--accent);color:#fff}
@@ -46,7 +43,6 @@
   .btn-ghost.on-navy:hover{border-color:#fff}
   .btn-lg{padding:16px 28px;font-size:16px}
 
-  /* nav */
   header.nav{position:sticky;top:0;z-index:60;background:rgba(237,242,247,.85);backdrop-filter:saturate(140%) blur(10px);border-bottom:1px solid var(--line);transition:background .2s}
   .nav-inner{display:flex;align-items:center;justify-content:space-between;height:70px}
   .brand{display:flex;align-items:center;gap:11px;font-weight:700;font-size:20px;letter-spacing:-0.02em;color:var(--navy)}
@@ -65,7 +61,6 @@
   .navy{background:var(--navy);color:var(--on-navy)}
   .soft{background:var(--bg-soft)}
 
-  /* ===================== HERO ===================== */
   .hero{background:linear-gradient(158deg,#0d2945 0%,#0a2138 58%,#081c30 100%);color:#fff;padding:88px 0 70px;position:relative;overflow:hidden}
   .hero::after{content:"";position:absolute;right:-160px;top:-120px;width:520px;height:520px;border-radius:50%;background:radial-gradient(circle,rgba(23,144,213,.16),transparent 68%);pointer-events:none}
   .hero-grid{display:grid;grid-template-columns:1.06fr .94fr;gap:60px;align-items:center;position:relative}
@@ -79,7 +74,6 @@
   .hero-meta .val{font-size:16px;color:#e7eef6;font-weight:500}
   @media(max-width:940px){.hero-grid{grid-template-columns:1fr;gap:44px}.hero h1{font-size:40px}.hero-meta{grid-template-columns:1fr;gap:20px}}
 
-  /* product decision card (hero + through-line) */
   .dcard{background:#0b2239;border:1px solid #16324e;border-radius:16px;overflow:hidden;box-shadow:0 40px 90px -40px rgba(0,0,0,.7)}
   .dcard-head{display:flex;align-items:center;justify-content:space-between;padding:14px 18px;background:#0a1f34;border-bottom:1px solid #16324e}
   .dcard-head .tt{font-family:'IBM Plex Mono',monospace;font-size:11.5px;letter-spacing:.08em;text-transform:uppercase;color:#7f9bb8}
@@ -99,12 +93,10 @@
   .dcard-decide b{color:#fff}
   .dcard-foot{display:flex;align-items:center;gap:8px;padding:12px 18px;border-top:1px solid #16324e;background:#0a1f34;font-family:'IBM Plex Mono',monospace;font-size:11.5px;letter-spacing:.04em;color:#7f9bb8}
 
-  /* heritage strip */
   .heritage{background:var(--navy-deep);border-top:1px solid var(--line-navy)}
   .heritage .wrap{padding:22px 40px;text-align:center}
   .heritage span{font-family:'IBM Plex Mono',monospace;font-size:12.5px;letter-spacing:.14em;text-transform:uppercase;color:#7b93ac}
 
-  /* split card */
   .split{display:grid;grid-template-columns:1fr 1fr;border-radius:var(--radius);overflow:hidden;border:1px solid var(--line);box-shadow:0 24px 60px -40px rgba(12,38,65,.35)}
   .split .half{padding:44px}
   .split .light{background:var(--white)}
@@ -120,7 +112,6 @@
   .split .dark .pill{border-color:#2b567f;color:#8fb6d8}
   @media(max-width:820px){.split{grid-template-columns:1fr}}
 
-  /* three problem cards */
   .cards-3{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
   .card{background:var(--white);border:1px solid var(--line);border-radius:var(--radius);padding:32px 30px;display:flex;flex-direction:column;min-height:250px;transition:box-shadow .3s ease,transform .3s ease}
   .card:hover{box-shadow:0 22px 50px -30px rgba(12,38,65,.4);transform:translateY(-3px)}
@@ -132,7 +123,6 @@
   .card .foot .dot.hollow{background:transparent;border:1.5px solid var(--body-light)}
   @media(max-width:820px){.cards-3{grid-template-columns:1fr}}
 
-  /* the cycle loop (dark) */
   .loop-row{display:grid;grid-template-columns:repeat(4,1fr);gap:0;align-items:stretch;position:relative}
   .lcard{border:1px solid var(--line-navy);border-radius:14px;padding:26px 24px;background:rgba(255,255,255,.015);min-height:200px;display:flex;flex-direction:column;margin:0 10px;position:relative}
   .lcard .num{font-family:'IBM Plex Mono',monospace;font-size:13px;color:var(--accent);font-weight:600;margin-bottom:24px}
@@ -146,7 +136,6 @@
   @media(max-width:820px){.loop-row{grid-template-columns:1fr 1fr;gap:20px}.lcard{margin:0}.lconn{display:none}}
   @media(max-width:520px){.loop-row{grid-template-columns:1fr}}
 
-  /* ===== WHAT WE DO — sticky rail + stream ===== */
   .wwd .grid{display:grid;grid-template-columns:.82fr 1.18fr;gap:70px;align-items:start}
   .rail{position:sticky;top:100px;align-self:start}
   .rail h2{font-size:40px;line-height:1.06;margin-bottom:20px}
@@ -196,7 +185,6 @@
   .trend-note{margin-top:12px;font-size:13px;color:#c7d6e6}
   .trend-note b{color:#fff}
 
-  /* foundation bar bleeding into dark heavy-lifting */
   .foundation-wrap{background:linear-gradient(180deg,transparent 0,transparent 52px,var(--navy) 52px,var(--navy) 100%);margin-top:14px}
   .foundation-bar{display:flex;align-items:stretch;gap:26px;background:var(--navy);color:#fff;border-radius:14px;padding:26px 32px;box-shadow:0 26px 60px -34px rgba(12,38,65,.6);position:relative}
   .foundation-bar::before{content:"";position:absolute;top:-9px;left:22%;transform:rotate(45deg);width:16px;height:16px;background:var(--navy)}
@@ -205,7 +193,6 @@
   .foundation-bar .fb-text{font-size:16px;color:var(--on-navy);padding-left:26px;border-left:1px solid var(--line-navy);display:flex;align-items:center}
   @media(max-width:900px){.wwd .grid{grid-template-columns:1fr;gap:30px}.rail{position:static}.rail h2{font-size:32px}.foundation-bar{flex-direction:column;gap:14px}.foundation-bar .fb-text{padding-left:0;border-left:none}.foundation-bar::before{display:none}}
 
-  /* heavy-lifting dark strip (continues from foundation) */
   .heavy{background:var(--navy);color:var(--on-navy);padding:56px 0 104px;margin-top:-1px}
   .heavy .callout{display:flex;gap:22px;align-items:baseline;background:rgba(23,144,213,.10);border:1px solid #1c4a72;border-radius:14px;padding:24px 30px}
   .heavy .callout .lab{font-family:'IBM Plex Mono',monospace;font-size:12px;letter-spacing:.1em;text-transform:uppercase;color:#63b7e6;white-space:nowrap;flex-shrink:0;padding-top:2px}
@@ -213,7 +200,6 @@
   .heavy .callout p b{color:#fff;font-weight:600}
   @media(max-width:640px){.heavy .callout{flex-direction:column;gap:8px}}
 
-  /* right person / right time */
   .rpt .split .half{min-height:320px;display:flex;flex-direction:column}
   .rpt .meta-row{display:flex;gap:44px;margin-top:auto;padding-top:30px}
   .rpt .meta-row .k{font-family:'IBM Plex Mono',monospace;font-size:11px;letter-spacing:.1em;text-transform:uppercase;color:var(--body-light);margin-bottom:6px}
@@ -226,7 +212,6 @@
   .thread p b{color:var(--accent-deep);font-weight:600}
   @media(max-width:640px){.thread{flex-direction:column;gap:8px}}
 
-  /* pillars */
   .pillars-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:30px}
   .pillar .n{font-family:'IBM Plex Mono',monospace;font-size:13px;color:var(--accent);font-weight:600;margin-bottom:16px}
   .pillar .rule{width:34px;height:3px;background:var(--accent);border-radius:2px;margin-bottom:18px}
@@ -234,7 +219,6 @@
   .pillar p{font-size:15.5px;color:var(--body)}
   @media(max-width:820px){.pillars-grid{grid-template-columns:1fr;gap:36px}}
 
-  /* moat (dark) + compare */
   .moat-grid{display:grid;grid-template-columns:.92fr 1.08fr;gap:56px;align-items:center}
   .moat-copy h2{font-size:38px;color:#fff;margin-bottom:20px}
   .moat-copy p{font-size:17px;color:var(--on-navy);margin-bottom:16px}
@@ -252,14 +236,12 @@
   .compare .us:not(.head)::before{content:"\2713";background:var(--accent);color:#fff}
   @media(max-width:820px){.moat-grid{grid-template-columns:1fr;gap:34px}}
 
-  /* cta */
   .cta{background:linear-gradient(158deg,#0d2945 0%,#0a2138 66%,#081c30 100%);color:#fff;text-align:center;margin-top:-1px}
   .cta h2{font-size:46px;letter-spacing:-0.03em;margin-bottom:18px;color:#fff}
   .cta p{font-size:19px;color:var(--on-navy);max-width:52ch;margin:0 auto 34px}
   .cta .eyebrow{justify-content:center}
   .cta .eyebrow span{color:#6f97bd}
 
-  /* footer */
   footer{background:var(--navy-deep);color:var(--on-navy);padding:66px 0 40px}
   .foot-grid{display:grid;grid-template-columns:1.5fr 1fr 1fr 1fr;gap:36px;margin-bottom:46px}
   .foot-brand .brand{color:#fff}
@@ -272,14 +254,12 @@
 
   .flag{position:fixed;bottom:16px;right:16px;z-index:99;background:var(--navy);color:#fff;font-family:'IBM Plex Mono',monospace;font-size:11px;letter-spacing:.05em;padding:7px 13px;border-radius:8px;opacity:.85}
 
-  /* ===================== restructured (web-native) sections ===================== */
   .intro{max-width:720px}
   .intro .eyebrow{margin-bottom:18px}
   .intro h2{font-size:33px;line-height:1.12;margin-bottom:15px}
   .intro p{font-size:18px;color:var(--body);max-width:58ch}
   .intro.on-navy h2{color:#fff}.intro.on-navy p{color:var(--on-navy)}
 
-  /* TRAP — full-bleed split, no floating box */
   .trap{padding:100px 0 0}
   .trap .intro{margin-bottom:54px}
   .trap-split{display:grid;grid-template-columns:1fr 1fr}
@@ -292,7 +272,6 @@
   .trap-split .dark .pill{border-color:#2b567f;color:#8fb6d8}
   @media(max-width:820px){.trap-split{grid-template-columns:1fr}.trap-split .half{padding:44px var(--gutter)}}
 
-  /* PROBLEMS — editorial hairline list, asymmetric */
   .prob2{display:grid;grid-template-columns:.72fr 1.28fr;gap:60px;align-items:start}
   .prob2 .aside .eyebrow{margin-bottom:18px}
   .prob2 .aside h2{font-size:30px;line-height:1.14}
@@ -308,7 +287,6 @@
   .pitem .stat.solve .dot{background:var(--accent);border-color:var(--accent)}
   @media(max-width:820px){.prob2{grid-template-columns:1fr;gap:34px}.pitem{grid-template-columns:32px 1fr;gap:16px}.pitem .stat{grid-column:2;margin-top:10px}}
 
-  /* CYCLE — connected timeline, borderless nodes */
   .loop2{margin-top:8px;position:relative}
   .loop2 .track{position:absolute;top:8px;left:12.5%;right:12.5%;height:2px;background:#22456a}
   .loop2 .nodes{display:grid;grid-template-columns:repeat(4,1fr);gap:28px;position:relative}
@@ -323,7 +301,6 @@
   @media(max-width:820px){.loop2 .nodes{grid-template-columns:1fr 1fr;gap:34px 28px}.loop2 .track{display:none}.node .arrow{display:none}}
   @media(max-width:520px){.loop2 .nodes{grid-template-columns:1fr}}
 
-  /* RPT — staggered offset panels (timeline feel) */
   .rpt2{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:28px;align-items:stretch}
   .rpt2 .panel{border-radius:var(--radius);padding:40px;min-height:320px;display:flex;flex-direction:column}
   .rpt2 .panel.light{background:var(--white);border:1px solid var(--line);box-shadow:0 20px 50px -34px rgba(12,38,65,.3)}
@@ -342,7 +319,6 @@
   .rpt2 .panel.dark .meta-row .v{color:#fff}
   @media(max-width:820px){.rpt2{grid-template-columns:1fr}.rpt2 .panel.dark{margin-top:0}}
 
-  /* PILLARS — full-width feature rows */
   .pfeatures{border-top:1px solid var(--line)}
   .pfeature{display:grid;grid-template-columns:200px 1fr;gap:48px;padding:42px 6px;border-bottom:1px solid var(--line);align-items:start;transition:padding .25s ease}
   .pfeature:hover{padding-left:16px}
@@ -384,15 +360,15 @@
   <div class="wrap hero-grid">
     <div class="hero-copy reveal in">
       <div class="eyebrow"><span class="r"></span><span>The MES for food &amp; beverage</span></div>
-      <h1>The MES built for food &amp; beverage — <span class="accent">live in weeks, not quarters.</span></h1>
-      <p class="sub">Not another dashboard. The full picture of where your plant is losing money — and the one move that matters next.</p>
+      <h1>The MES designed to enable improvement — <span class="accent">built for food &amp; beverage.</span></h1>
+      <p class="sub">A focused picture of where your operation can improve — so the effort you already put into improvement goes to the projects that actually move the numbers.</p>
       <div class="hero-actions">
         <a href="#demo" class="btn btn-primary btn-lg">Book a walkthrough</a>
         <a href="#approach" class="btn btn-ghost on-navy btn-lg">See how it works</a>
       </div>
       <div class="hero-meta">
         <div><div class="lab">The full picture</div><div class="val">Hourly · daily · weekly</div></div>
-        <div><div class="lab">Live in</div><div class="val">Weeks, not quarters</div></div>
+        <div><div class="lab">Up and running in</div><div class="val">Weeks</div></div>
         <div><div class="lab">Built for</div><div class="val">Food &amp; beverage only</div></div>
       </div>
     </div>
@@ -432,9 +408,9 @@
 <section id="problem" class="trap">
   <div class="wrap">
     <div class="intro reveal">
-      <div class="eyebrow"><span class="r"></span><span>The trap</span></div>
-      <h2>The fires never stop — so the daily work eats the improvement.</h2>
-      <p>Leadership funds continuous improvement. The floor spends it fighting fires. Nothing gets fixed for good, only patched to the next shift — so the same ground gets re-won every year.</p>
+      <div class="eyebrow"><span class="r"></span><span>Why improvement stalls</span></div>
+      <h2>The day-to-day keeps winning against the work that would actually improve things.</h2>
+      <p>You set aside people and hours for improvement. Then the breakdowns, jams and long changeovers take them back. Problems get patched to the next shift instead of fixed, so the same issues come around again — and the improvement plan never gets the time it needs.</p>
     </div>
   </div>
   <div class="trap-split reveal">
@@ -696,7 +672,7 @@
   <div class="wrap">
     <div class="eyebrow reveal"><span class="r"></span><span>Break the cycle</span></div>
     <h2 class="reveal">From re-winning the same ground<br>to work that finally stacks.</h2>
-    <p class="reveal">See the full picture of where your plant is losing money — and the one move that matters next. Live in weeks, not quarters.</p>
+    <p class="reveal">See the full picture of where your plant is losing money — and the one move that matters next. Up and running in weeks.</p>
     <div class="reveal"><a href="#" class="btn btn-primary btn-lg">Book a walkthrough</a></div>
   </div>
 </section>
@@ -715,7 +691,7 @@
           </svg>
           <span><span>Live</span><span class="track">Tracking</span></span>
         </a>
-        <p>The manufacturing execution system built only for food &amp; beverage. Live in weeks, not quarters.</p>
+        <p>The manufacturing execution system built only for food &amp; beverage. Up and running in weeks.</p>
       </div>
       <div class="foot-col">
         <h4>Product</h4>
