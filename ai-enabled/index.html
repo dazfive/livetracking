@@ -51,6 +51,8 @@
   .brand-mark i:nth-child(1){height:40%}.brand-mark i:nth-child(2){height:70%}.brand-mark i:nth-child(3){height:100%}
   .nav-links{display:flex;gap:28px;font-size:15px;color:var(--ink-2)}
   .nav-links a:hover{color:var(--ink)}
+  .nav-links a.ai{color:var(--accent);font-weight:500;display:inline-flex;align-items:center;gap:6px}
+  .nav-links a.ai::before{content:"";width:6px;height:6px;border-radius:50%;background:var(--accent)}
   .nav-right{display:flex;align-items:center;gap:18px;font-size:15px}
   .nav-right .login{color:var(--ink-2)}
   @media (max-width:860px){.nav-links,.nav-right .login{display:none}}
@@ -250,8 +252,8 @@
 <body>
 <header class="nav">
   <div class="wrap">
-    <a class="brand" href="#top" aria-label="LiveTracking home"><span class="brand-mark" aria-hidden="true"><i></i><i></i><i></i></span>LiveTracking</a>
-    <nav class="nav-links" aria-label="Primary"><a href="#agents">Product</a><a href="#proof">Customers</a><a href="#">Resources</a><a href="#">About</a></nav>
+    <a class="brand" href="../index.html" aria-label="LiveTracking home"><span class="brand-mark" aria-hidden="true"><i></i><i></i><i></i></span>LiveTracking</a>
+    <nav class="nav-links" aria-label="Primary"><a href="#agents">Product</a><a href="#proof">Customers</a><a href="#">Resources</a><a href="#">About</a><a class="ai" href="index.html" aria-current="page">AI Enabled</a></nav>
     <div class="nav-right"><a class="login" href="#">Log in</a><a class="btn btn-primary btn-sm" href="#demo">Join early access</a></div>
   </div>
 </header>
