@@ -51,6 +51,7 @@
   .brand-mark i:nth-child(1){height:40%}.brand-mark i:nth-child(2){height:70%}.brand-mark i:nth-child(3){height:100%}
   .nav-links{display:flex;gap:28px;font-size:15px;color:var(--ink-2)}
   .nav-links a:hover{color:var(--ink)}
+  .nav-links a[aria-current="page"]:not(.ai){color:var(--ink);font-weight:500}
   .nav-links a.ai{color:var(--accent);font-weight:500;display:inline-flex;align-items:center;gap:6px}
   .nav-links a.ai::before{content:"";width:6px;height:6px;border-radius:50%;background:var(--accent)}
   .nav-right{display:flex;align-items:center;gap:18px;font-size:15px}
@@ -253,7 +254,7 @@
 <header class="nav">
   <div class="wrap">
     <a class="brand" href="#top" aria-label="LiveTracking home"><span class="brand-mark" aria-hidden="true"><i></i><i></i><i></i></span>LiveTracking</a>
-    <nav class="nav-links" aria-label="Primary"><a href="#clocks">Product</a><a href="#proof">Customers</a><a href="#">Resources</a><a href="#">About</a><a class="ai" href="ai-enabled/index.html">AI Enabled</a></nav>
+    <nav class="nav-links" aria-label="Primary"><a href="#clocks">Product</a><a href="#proof">Customers</a><a href="#">Resources</a><a href="#">About</a><a href="expert-services/index.html">Expert Services</a><a class="ai" href="ai-enabled/index.html">AI Enabled</a></nav>
     <div class="nav-right"><a class="login" href="#">Log in</a><a class="btn btn-primary btn-sm" href="#demo">Book a demo</a></div>
   </div>
 </header>
